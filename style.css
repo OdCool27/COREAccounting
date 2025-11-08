@@ -764,4 +764,12 @@ textarea{
     width: auto;
     height: 30px;
     filter: invert(1);
+
+}
+
+@media (max-width:700px){
+    #core-contact .container form{
+        min-width: 380px;
+        padding: 15px;
+    }
 }
