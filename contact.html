@@ -50,6 +50,53 @@
     <div class="page-intro">
         <h2>Connect to the CORE</h2>
     </div>
+
+    <div class="container">
+
+        <form action="https://formspree.io/f/mgvrwybb" method="POST">
+            <h3>Message Us</h3>
+
+            <label for="customer_name">Name</label>
+            <input type="text" id="customer_name" name="customer_name" placeholder="John Doe" required>
+
+            <label for ="customer_email">Email</label>
+            <input type="email" id="customer_email" name="customer_email" placeholder="email@example.com" required>
+
+            <label for ="customer_phone">Email</label>
+            <input type="tel" id="customer_phone" name="customer_phone" placeholder="888-888-8888" required>
+
+            <label for="customer_message">Message</label>
+            <textarea id="customer_message" name="customer_message" placeholder="Enter your message" rows="7"></textarea>
+
+            <div class="form-btn">
+                <input type="reset" value="Clear">
+                <input type="submit" value="Send Message">
+            </div>
+
+        </form>
+
+        <div class="contactMethod">
+            <h4>Other Contact Methods</h4>
+            <div>
+                <img src="assets/emailIcon.png" alt="Email Icon">
+                <a href="mailto:info@coreaccountingja.com">info@coreaccountingja.com</a>
+            </div>
+            <div>
+                <img src="assets/instagramlogo.png" alt="Instagram Icon">
+                <a href="https://www.instagram.com/core_accounting_ja/" target="_blank">@core_accounting_ja</a>
+            </div>
+            <div>
+                <img src="assets/linkedinlogo.png" alt="Instagram Icon">
+                <a href="https://www.linkedin.com/company/core-accounting-jamaica/" target="_blank">Core Accounting Jamaica</a>
+            </div>
+            <div>
+                <img src="assets/locationIcon.png" alt="Location Icon">
+                <a href="https://maps.google.com/maps/search/+Kingston+Jamaica/" target="_blank">Kingston, Jamaica</a>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
 
@@ -61,8 +108,8 @@
             <div class="column">
                 <img class="footerlogo" src="assets/navlogo.png" alt="CORE Accounting Logo">
                 <div class="social-media">
-                    <img src="assets/instagramlogo.png" alt="Instagram Logo">
-                    <img src="assets/linkedinlogo.png" alt="LinkedIn Logo">
+                    <img src="assets/instagramlogo.png" alt="Instagram Logo" onclick="window.open('https://www.instagram.com/core_accounting_ja/')">
+                    <img src="assets/linkedinlogo.png" alt="LinkedIn Logo" onclick="window.open('https://www.linkedin.com/company/core-accounting-jamaica/')">
                 </div>
             </div>
             <div class="column">
@@ -106,7 +153,7 @@
 <div id="calendlyOverlay">
     <div id="calendlyModal">
         <button id="closeCalendly">&times;</button>
-        <div class="calendly-inline-widget" data-url="https://calendly.com/odanecollins/30min?primary_color=000000"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/coreaccountingja-info/30min"></div>
     </div>
 </div>
 

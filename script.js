@@ -96,6 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Open Calendly modal when "Let's Get Started" is clicked
+    document.querySelectorAll(".get-started").forEach(button => {
+        button.addEventListener("click", () => {
+            overlay.style.display = "flex";
+            document.body.style.overflow = "hidden"; // Prevent scrolling in background
+        });
+    });
+
     // Close modal
     closeBtn.addEventListener("click", () => {
         overlay.style.display = "none";
@@ -110,4 +118,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+});
+
+//----------------------SERVICES-SERVICE PAGE----------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const services = document.querySelectorAll(".service");
+
+    // Set initial hidden state
+    services.forEach(service => {
+        service.style.opacity = "0";
+        service.style.transform = "translateY(40px)";
+        service.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+    });
+
+    // Observer for fade-in animation
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target); // fade in only once
+            }
+        });
+    }, {
+        threshold: 0.2 // trigger when 20% visible
+    });
+
+    // Observe each service element
+    services.forEach(service => observer.observe(service));
 });
