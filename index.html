@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CORE_Accounting</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Odane Collins - Active Code">
+    <link rel="icon" href="assets/CORE_favicon.png">
+
+    <!--Instrument Sans Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="navlogo">
+            <a href="index.html"><img src="assets/navlogo.png" alt="CORE Accounting Logo"></a>
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="book-consult">Book Consultation</button>
+
+        </nav>
+
+        <div class="hamburger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+
+    </header>
+    <div class="dropdown">
+        <ul class="navlinks">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <section id="hero">
+        <div class="overlay">
+            <div class="hero-text">
+                <div class="highlight">
+                    <p>20+ Years Combined Experience.</p>
+                </div>
+                <h1>Your numbers tell a story,<br>we'll ensure it's the right one.</h1>
+                <p class="subtitle">Professional accounting and financial solutions tailored for small and medium-sized businesses.</p>
+                <div class="hero-buttons">
+                    <button class="book-consult">Book a Consultation</button>
+                    <button class="onboarding" onclick="window.location.href='https://forms.office.com/Pages/ResponsePage.aspx?id=ScmfM0c7TU2cLMkanXmGBiwBXPVEo_dHmLj2eluEevRUNjVBS1BQUFBKTUdNVTAxWUZEUkNETEgxQy4u&origin=QRCode'">Customer Onboarding</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>CORE Services</h2>
+            <p>Comprehensive financial solutions designed to help your business thrive.</p>
+
+            <div class="services-cards">
+                <div class="s-card">
+                    <h3>Accounting & Bookkeeping</h3>
+                    <p>Reliable recordkeeping and reporting to support smart financial decisions.</p>
+                </div>
+
+                <div class="s-card">
+                    <h3>Tax Planning & Filing</h3>
+                    <p>Strategic tax support to ensure compliance and maximize efficiency.</p>
+                </div>
+
+                <div class="s-card">
+                    <h3>Financial Advisory</h3>
+                    <p>Practical advice for business growth and financial clarity.</p>
+                </div>
+
+                <div class="s-card">
+                    <h3>Audit Preparation</h3>
+                    <p>Detailed preparation and guidance for seamless audits.</p>
+                </div>
+            </div>
+            <button class="view-services" onclick="">View All Services →</button>
+        </div>
+    </section>
+    <div class="angled-lines">
+        <div class="line l-1"></div>
+        <div class="line l-2"></div>
+    </div>
+    <section id="tips">
+        <h2>CORE Tips</h2>
+        <p id="tip-text"></p>
+    </section>
+    <section id="finalCallToAction">
+        <div class="container">
+            <h1>Ready to Take Control of Your Finances?</h1>
+            <p>Let's work together to simplify your accounting and drive your business forward.</p>
+            <button class="get-started">Let's Get Started</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="topfooter">
+
+                <div class="column">
+                    <img class="footerlogo" src="assets/navlogo.png" alt="CORE Accounting Logo">
+                    <div class="social-media">
+                        <img src="assets/instagramlogo.png" alt="Instagram Logo">
+                        <img src="assets/linkedinlogo.png" alt="LinkedIn Logo">
+                    </div>
+                </div>
+                <div class="column">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="column">
+                    <h4>Service</h4>
+                    <a href="services.html#accounting-bookkeeping">Accounting & Bookkeeping</a>
+                    <a href="services.html#tax-planning">Tax Planning & Filing</a>
+                    <a href="services.html#audit-preparation">Audit Preparation</a>
+                    <a href="services.html#financial-advisory">Financial Advisory</a>
+                </div>
+                <div class="column">
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <img src="assets/emailIcon.png" alt="Email Icon">
+                        <a href="mailto:info@coreaccountingja.com">info@coreaccountingja.com</a>
+                    </div>
+                    <div class="footer-contact">
+                        <img src="assets/locationIcon.png" alt="Location Icon">
+                        <a href="https://maps.google.com/maps/search/+Kingston+Jamaica/">Kingston, Jamaica</a>
+                    </div>
+                    <div class="footer-contact" style="display:none;"><!--DISPLAY SET TO NONE UNTIL NUMBER IS GIVEN-->
+                        <img src="assets/teleIcon.png" alt="Telephone Icon">
+                        <a href="tel:8761111111">(876)111-1111</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>©<span id="copyright-year"></span> Core Accounting Jamaica. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Calendly Modal -->
+    <div id="calendlyOverlay">
+        <div id="calendlyModal">
+            <button id="closeCalendly">&times;</button>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/odanecollins/30min?primary_color=000000"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
