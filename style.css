@@ -386,7 +386,7 @@ nav{
 /*---------------------------------TIPS--------------------------------*/
 #tips{
     padding: 100px 0;
-    background: #625E5E;
+    background: var(--primary-color);
     color: white;
     transform:skewY(-2deg);
 }
@@ -768,7 +768,7 @@ textarea{
 
 @media (max-width:700px){
     #core-contact .container form{
-        min-width: 380px;
+        min-width: 300px;
         padding: 15px;
     }
 }
