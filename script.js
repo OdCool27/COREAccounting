@@ -59,7 +59,7 @@ window.onload = function() {
             // Fade back in
             tipElement.style.opacity = 1;
         }, 1000); // must match CSS transition duration
-    }, 7000);
+    }, 10000);
 };
 
 
