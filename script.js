@@ -1,41 +1,42 @@
 window.onload = function() {
     const tips = [
-        "'Tip #1: Adopt the 13-Period Year Mindset. Don’t just budget monthly. Think in 13 four-week periods. This simple shift makes cash flow forecasting more accurate and helps you better manage the financial ebbs and flows of a full year.'",
-        "'Tip #2: Invoice Immediately, Follow Up Diligently. The moment a job is done or a product is delivered, send the invoice. Use calendar reminders or accounting software for polite but firm follow-ups. Speed in invoicing is key to healthy cash flow.'",
-        "'Tip #3: Cultivate a Deposit Culture. For large projects or custom orders, always require a deposit (e.g., 30-50%). This improves your cash inflow upfront, covers initial costs, and secures client commitment.'",
-        "'Tip #4: Negotiate Supplier Terms, Don’t Just Accept Them. Proactively manage your payables. Negotiate with suppliers for extended payment terms (e.g., net-30 or net-60). Strong relationships can often secure you better credit, easing cash flow pressure.'",
-        "'Tip #5: Maintain a Strategic Cash Flow Cushion. Aim to keep enough cash in reserve to cover 3–6 months of core operating expenses. This buffer is your primary defense against unexpected slow periods, client defaults, or economic shifts.'",
+        "Adopt the 13-Period Year Mindset. Don’t just budget monthly. Think in 13 four-week periods. This simple shift makes cash flow forecasting more accurate and helps you better manage the financial ebbs and flows of a full year.",
+        "Invoice Immediately, Follow Up Diligently. The moment a job is done or a product is delivered, send the invoice. Use calendar reminders or accounting software for polite but firm follow-ups. Speed in invoicing is key to healthy cash flow.",
+        "Cultivate a Deposit Culture. For large projects or custom orders, always require a deposit (e.g., 30-50%). This improves your cash inflow upfront, covers initial costs, and secures client commitment.",
+        "Negotiate Supplier Terms, Don’t Just Accept Them. Proactively manage your payables. Negotiate with suppliers for extended payment terms (e.g., net-30 or net-60). Strong relationships can often secure you better credit, easing cash flow pressure.",
+        "Maintain a Strategic Cash Flow Cushion. Aim to keep enough cash in reserve to cover 3–6 months of core operating expenses. This buffer is your primary defense against unexpected slow periods, client defaults, or economic shifts.",
 
-        "'Tip #6: Know the Critical Difference: Avoidance vs. Evasion. Tax avoidance (using legal deductions and incentives) is smart financial planning. Tax evasion (willfully hiding income) is a crime with severe penalties. Always choose the path of full compliance.'",
-        "'Tip #7: Be Proactive with Legitimate Deductions. Meticulously keep receipts for all business-related expenses including vehicle use (log your mileage!), home office costs, professional development, and business meals. These legally reduce your taxable income.'",
-        "'Tip #8: The Golden Rule: Separate Personal and Business Banking. Commingling funds is a major red flag for tax authorities. A dedicated business bank account creates a clear audit trail, proves business intent, and simplifies tax preparation.'",
-        "'Tip #9: Prioritize On-Time Filing and Payments. Late filing penalties and interest can cripple a small business. Use digital calendars or accounting software alerts to stay on top of all tax deadlines.'",
-        "'Tip #10: Schedule an Annual Check-up with a Tax Advisor. Tax laws change frequently. An annual consultation with a qualified accountant can uncover new deductions and confirm that your business structure is still tax-efficient.'",
+        "Know the Critical Difference: Avoidance vs. Evasion. Tax avoidance (using legal deductions and incentives) is smart financial planning. Tax evasion (willfully hiding income) is a crime with severe penalties. Always choose the path of full compliance.",
+        "Be Proactive with Legitimate Deductions. Meticulously keep receipts for all business-related expenses including vehicle use (log your mileage!), home office costs, professional development, and business meals. These legally reduce your taxable income.",
+        "The Golden Rule: Separate Personal and Business Banking. Commingling funds is a major red flag for tax authorities. A dedicated business bank account creates a clear audit trail, proves business intent, and simplifies tax preparation.",
+        "Prioritize On-Time Filing and Payments. Late filing penalties and interest can cripple a small business. Use digital calendars or accounting software alerts to stay on top of all tax deadlines.",
+        "Schedule an Annual Check-up with a Tax Advisor. Tax laws change frequently. An annual consultation with a qualified accountant can uncover new deductions and confirm that your business structure is still tax-efficient.",
 
-        "'Tip #11: Build Scenarios into Your Budget. Don’t rely on one forecast. Create best-case, worst-case, and most-likely-case scenarios to prepare for market volatility and sudden cost changes.'",
-        "'Tip #12: Always Budget for a Contingency Fund. Include a 10–15% contingency line for unexpected expenses. This prevents your budget from derailing when emergencies arise.'",
-        "'Tip #13: Use the Digital Envelope System for Discretionary Spending. Allocate fixed monthly budgets for flexible expenses such as marketing and supplies. Stop spending once a category’s “envelope” is empty.'",
-        "'Tip #14: Harness the Power of Zero-Based Budgeting. Justify every expense anew each period. This method forces efficiency and better aligns spending with current goals.'",
-        "'Tip #15: Create Bottom-Up Budgets with Team Input. Involve department leaders when forecasting expenses. Their insights improve accuracy and build ownership in the budgeting process.'",
+        "Build Scenarios into Your Budget. Don’t rely on one forecast. Create best-case, worst-case, and most-likely-case scenarios to prepare for market volatility and sudden cost changes.",
+        "Always Budget for a Contingency Fund. Include a 10–15% contingency line for unexpected expenses. This prevents your budget from derailing when emergencies arise.",
+        "Use the Digital Envelope System for Discretionary Spending. Allocate fixed monthly budgets for flexible expenses such as marketing and supplies. Stop spending once a category’s “envelope” is empty.",
+        "Harness the Power of Zero-Based Budgeting. Justify every expense anew each period. This method forces efficiency and better aligns spending with current goals.",
+        "Create Bottom-Up Budgets with Team Input. Involve department leaders when forecasting expenses. Their insights improve accuracy and build ownership in the budgeting process.",
 
-        "'Tip #16: Embrace Digital Tools, But Have a Backup Plan. Use cloud-based accounting software daily, but maintain organized physical backups for critical documents.'",
-        "'Tip #17: Implement the One-Touch Receipt Rule. Process receipts immediately by photographing and uploading them. This prevents backlog and ensures all deductions are captured.'",
-        "'Tip #18: Reconcile Bank Accounts Weekly. Weekly reconciliation catches errors and fraud early while giving you a real-time picture of your cash position.'",
-        "'Tip #19: Standardize Your Chart of Accounts. A clear, consistent list of income and expense categories makes your financial statements meaningful, comparable, and easy to analyze.'",
-        "'Tip #20: Document the Business Purpose for Every Expense. Add short notes to receipts or memo fields explaining the purpose. This creates a strong audit trail and supports deductions.'",
+        "Embrace Digital Tools, But Have a Backup Plan. Use cloud-based accounting software daily, but maintain organized physical backups for critical documents.",
+        "Implement the One-Touch Receipt Rule. Process receipts immediately by photographing and uploading them. This prevents backlog and ensures all deductions are captured.",
+        "Reconcile Bank Accounts Weekly. Weekly reconciliation catches errors and fraud early while giving you a real-time picture of your cash position.",
+        "Standardize Your Chart of Accounts. A clear, consistent list of income and expense categories makes your financial statements meaningful, comparable, and easy to analyze.",
+        "Document the Business Purpose for Every Expense. Add short notes to receipts or memo fields explaining the purpose. This creates a strong audit trail and supports deductions.",
 
-        "'Tip #21: Map Your Core Financial Cycles. Visually outline your Order-to-Cash (receivables) and Procure-to-Pay (payables) cycles to identify inefficiencies and bottlenecks.'",
-        "'Tip #22: Enforce a Three-Way Match for Supplier Payments. Match every invoice with the Purchase Order and Goods Received Note before paying. This protects against fraud and overpayment.'",
-        "'Tip #23: Use Sequential Numbering for All Documents. Number invoices, receipts, and purchase orders in order to ensure completeness and make missing documents easy to identify.'",
-        "'Tip #24: Automate Recurring Transactions. Schedule automatic entries for fixed monthly expenses like rent and subscriptions to save time and reduce manual-entry errors.'",
-        "'Tip #25: Establish a Strict Month-End Closing Checklist. A standardized monthly closing checklist ensures accuracy, timeliness, and completeness in your financial reporting.'",
+        "Map Your Core Financial Cycles. Visually outline your Order-to-Cash (receivables) and Procure-to-Pay (payables) cycles to identify inefficiencies and bottlenecks.",
+        "Enforce a Three-Way Match for Supplier Payments. Match every invoice with the Purchase Order and Goods Received Note before paying. This protects against fraud and overpayment.",
+        "Use Sequential Numbering for All Documents. Number invoices, receipts, and purchase orders in order to ensure completeness and make missing documents easy to identify.",
+        "Automate Recurring Transactions. Schedule automatic entries for fixed monthly expenses like rent and subscriptions to save time and reduce manual-entry errors.",
+        "Establish a Strict Month-End Closing Checklist. A standardized monthly closing checklist ensures accuracy, timeliness, and completeness in your financial reporting.",
 
-        "'Tip #26: Identify and Monitor Your KPIs. Track critical indicators like Gross Profit Margin, Accounts Receivable Days, and Inventory Turnover to understand your business’s financial health.'",
-        "'Tip #27: Conduct Profitability Analysis by Segment. Identify which products, services, or clients generate the most profit and allocate resources strategically.'",
-        "'Tip #28: Use Aged Receivable Reports as an Action Tool. Follow up immediately on clients aging into the 31–60 day category to prevent delinquent payments.'",
-        "'Tip #29: Seek Out Industry Benchmarks. Compare your performance to industry averages to spot strengths, weaknesses, and areas for improvement.'",
-        "'Tip #30: Schedule a Monthly Financial Review Meeting. Dedicate time each month to review financial statements and use insights to guide strategic decision-making.'"
+        "Identify and Monitor Your KPIs. Track critical indicators like Gross Profit Margin, Accounts Receivable Days, and Inventory Turnover to understand your business’s financial health.",
+        "Conduct Profitability Analysis by Segment. Identify which products, services, or clients generate the most profit and allocate resources strategically.",
+        "Use Aged Receivable Reports as an Action Tool. Follow up immediately on clients aging into the 31–60 day category to prevent delinquent payments.",
+        "Seek Out Industry Benchmarks. Compare your performance to industry averages to spot strengths, weaknesses, and areas for improvement.",
+        "Schedule a Monthly Financial Review Meeting. Dedicate time each month to review financial statements and use insights to guide strategic decision-making."
     ];
+
 
 
     let index = 0;
