@@ -1,4 +1,5 @@
 :root{
+    --main-gradient: linear-gradient(to right, var(--primary-color), var(--tertiary-color));
     --primary-color: #25285A;
     --secondary-color: #232323;
     --tertiary-color: #095238;
@@ -84,7 +85,7 @@ button:active{
 
 header{
     display: flex;
-    background-color: var(--primary-color);
+    background: var(--main-gradient);
     width: 100%;
     height: 75px;
     justify-content: space-between;
@@ -137,7 +138,7 @@ nav{
     transition: all 0.3s ease;
     top: 75px;
     z-index: 998;
-    background-color: var(--primary-color);
+    background: var(--main-gradient);
     margin:0;
 }
 
@@ -243,13 +244,34 @@ nav{
     max-width: 700px;
 }
 
-.highlight{
+.highlight {
+    position: relative;
     width: 350px;
     height: 40px;
     border-radius: 30px;
-    border: 7px solid rgba(15, 62, 117, 0.6);
     background-color: rgba(255,255,255,0.4);
+    z-index: 1;
+    padding: 7px 0;
 }
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 7px; /* same as your original border thickness */
+    border-radius: inherit;
+    background: var(--main-gradient);
+
+    /* Create the hollow center (real gradient border) */
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    z-index: -1;
+}
+
 
 .highlight p{
     font-size: var(--fs16);
@@ -285,7 +307,7 @@ nav{
 }
 
 .onboarding{
-    background-color: var(--secondary-color);
+    background-color: #181A3C;
     color: white;
 }
 
@@ -329,7 +351,7 @@ nav{
     width: 280px;
     height: 280px;
     color: white;
-    background-color: var(--tertiary-color);
+    background: linear-gradient(to bottom, var(--primary-color), #484881);
     padding: 0 20px;
     margin: 20px 0;
     border-radius: 20px;
@@ -421,13 +443,13 @@ nav{
 }
 
 .get-started{
-    background-color: black;
+    background-color: #181A3C;
     color:white;
 }
 
 /*----------------------------------FOOTER------------------------------------------------*/
 footer{
-    background-color: var(--primary-color);
+    background: var(--main-gradient);
     color: white;
     width: 100%;
     padding: 100px 0;
@@ -557,7 +579,7 @@ footer{
 }
 
 .core-values{
-    background: #678c77;
+    background: var(--primary-color);
     width: 100%;
     display: flex;
     flex-direction: column;
